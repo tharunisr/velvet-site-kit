@@ -27,3 +27,23 @@ npm run dev
 - TypeScript
 - React
 - Tailwind CSS
+
+## Salon template — customization guide
+
+All salon-specific content lives in two places:
+
+- `src/config/salonConfig.js` — name, logo initials, email, phone, WhatsApp number,
+  address, opening hours, Google Maps embed/directions URLs, social links, stats.
+- `src/data/` — `services.js`, `packages.js`, `testimonials.js`, `gallery.js`.
+
+Images live in `src/assets/` and are imported by the data files.
+
+### Enquiry emails (Formspree)
+
+1. Create a form at formspree.io and set the salon owner's email as the recipient.
+2. Copy `.env.example` to `.env` and set `VITE_FORMSPREE_ENDPOINT` to the form URL.
+3. The contact form reads it via `import.meta.env.VITE_FORMSPREE_ENDPOINT`.
+
+### Design tokens
+
+Colours, gradients, shadows, fonts and animations are defined once in `src/styles.css`.
