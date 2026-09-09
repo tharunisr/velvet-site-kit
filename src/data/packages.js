@@ -1,0 +1,47 @@
+export const packages = [
+  {
+    id: "essential-glow",
+    name: "Essential Glow",
+    duration: "90 minutes",
+    price: "$89",
+    description: "A refreshing reset for busy days.",
+    includes: [
+      "Express hydrating facial",
+      "Hair wash & blow dry",
+      "Classic manicure",
+      "Relaxing scalp massage",
+    ],
+    featured: false,
+  },
+  {
+    id: "signature-beauty",
+    name: "Signature Beauty",
+    duration: "3 hours",
+    price: "$189",
+    description: "Our most loved complete beauty ritual.",
+    includes: [
+      "Deep-cleanse luxury facial",
+      "Hair spa & styling",
+      "Manicure & pedicure",
+      "Soft glam makeup",
+      "Complimentary herbal tea",
+    ],
+    featured: true,
+  },
+  {
+    id: "luxury-experience",
+    name: "Luxury Experience",
+    duration: "5 hours",
+    price: "$349",
+    description: "A full day devoted entirely to you.",
+    includes: [
+      "Signature gold facial",
+      "Full body spa & aroma massage",
+      "Hair spa, colour gloss & styling",
+      "Luxury manicure & pedicure",
+      "Bridal-grade makeup session",
+      "Private suite & refreshments",
+    ],
+    featured: false,
+  },
+];
